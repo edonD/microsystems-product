@@ -7,6 +7,7 @@ import HowItWorks from "./components/HowItWorks";
 import Features from "./components/Features";
 import Technology from "./components/Technology";
 import Specs from "./components/Specs";
+import Competitors from "./components/Competitors";
 import UseCases from "./components/UseCases";
 import FAQ from "./components/FAQ";
 import CTA from "./components/CTA";
@@ -25,6 +26,7 @@ export default function Home() {
         <Features />
         <Technology />
         <Specs />
+        <Competitors />
         <UseCases />
         <FAQ />
         <CTA />
