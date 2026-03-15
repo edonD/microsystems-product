@@ -39,8 +39,8 @@ export default function Hero() {
           transition={{ duration: 0.6, delay: 0.2 }}
         >
           Veriflux TRACE-1 is a handheld microfluidic analyzer that detects PFOA
-          and PFOS at sub-4 ppt — meeting EPA standards, at a fraction of lab
-          cost and time.
+          and PFOS at sub-4 ppt. Verify your treatment systems work, catch
+          breakthrough instantly, and meet EPA standards — without the lab.
         </motion.p>
 
         <motion.div

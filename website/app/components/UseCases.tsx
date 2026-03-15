@@ -4,10 +4,10 @@ import { motion } from "framer-motion";
 
 const useCases = [
   {
-    title: "Municipal Water Utilities",
+    title: "Treatment Verification for Utilities",
     description:
-      "Daily monitoring of treatment plant influent and effluent. Verify GAC and ion exchange systems are removing PFAS before water enters distribution. Replace quarterly lab testing with weekly on-site screening.",
-    impact: "Save $50K+/year in lab costs per facility",
+      "Utilities installing $500K-5M GAC or ion exchange systems cannot verify they work in real-time. TRACE-1 monitors influent and effluent daily, catches breakthrough instantly, and optimizes media replacement schedules — extending GAC bed life by 10-20%.",
+    impact: "Save $50K-200K/year per treatment system",
     icon: (
       <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
         <path d="M12 22s-8-4.5-8-11.8A8 8 0 0 1 12 2a8 8 0 0 1 8 8.2c0 7.3-8 11.8-8 11.8z" />
