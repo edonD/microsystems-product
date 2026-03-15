@@ -337,6 +337,75 @@ export default function AdminPage() {
           <Timeline />
         </div>
 
+        {/* Funding sources */}
+        <div className="mb-8 p-6 bg-surface rounded-xl border border-border">
+          <h3 className="text-sm font-semibold mb-4">Funding Sources (Priority Order)</h3>
+          <div className="space-y-3">
+            {[
+              {
+                name: "SERDP/ESTCP (DoD)",
+                amount: "$500K-2M",
+                status: "FY2026 solicitation open",
+                detail: "\"Real-Time Sensors for PFAS in Soil and Groundwater\" — directly matches TRACE-1",
+                priority: "HIGH",
+                color: "#10b981",
+              },
+              {
+                name: "EPA SBIR",
+                amount: "$100K (Ph I) + $400K (Ph II)",
+                status: "Program lapsed — awaiting reauthorization",
+                detail: "Previously funded PFAS detection technologies. Apply when reauthorized.",
+                priority: "HIGH",
+                color: "#f59e0b",
+              },
+              {
+                name: "NSF SBIR/STTR",
+                amount: "$275K (Ph I) + $1M (Ph II)",
+                status: "Program lapsed — awaiting reauthorization",
+                detail: "Environmental Technologies, Sensors, Advanced Manufacturing topics.",
+                priority: "HIGH",
+                color: "#f59e0b",
+              },
+              {
+                name: "State Innovation Funds",
+                amount: "$50K-200K",
+                status: "Active (CA, NJ, MI)",
+                detail: "California PFAS Detection Innovation Fund, NJ PFAS Innovation Technology Fund.",
+                priority: "MEDIUM",
+                color: "#3b82f6",
+              },
+              {
+                name: "Water-focused VCs",
+                amount: "Seed: $500K-2M",
+                status: "Always open",
+                detail: "Burnt Island Ventures, Emerald Technology, 2150. Also: Xylem, Veolia as strategic.",
+                priority: "LATER",
+                color: "#6b7280",
+              },
+            ].map((source) => (
+              <div
+                key={source.name}
+                className="p-3 bg-background rounded-lg border border-border/50 flex items-start gap-3"
+              >
+                <div
+                  className="text-[9px] font-mono font-bold px-1.5 py-0.5 rounded shrink-0 mt-0.5"
+                  style={{ backgroundColor: `${source.color}20`, color: source.color }}
+                >
+                  {source.priority}
+                </div>
+                <div className="flex-1 min-w-0">
+                  <div className="flex items-center gap-2">
+                    <span className="text-sm font-medium">{source.name}</span>
+                    <span className="text-[10px] font-mono text-accent-emerald">{source.amount}</span>
+                  </div>
+                  <div className="text-[10px] text-accent-amber font-mono mt-0.5">{source.status}</div>
+                  <div className="text-[10px] text-muted mt-0.5">{source.detail}</div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
         {/* Budget summary */}
         <div className="mb-8 p-6 bg-surface rounded-xl border border-border">
           <h3 className="text-sm font-semibold mb-4">Estimated Budget Summary</h3>
